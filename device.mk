@@ -117,6 +117,7 @@ PRODUCT_PACKAGES += \
     libsdmutils \
     memtrack.kona \
     libtinyxml \
+    libutilscallstack.vendor \
     libvulkan \
     vendor.display.config@1.9.vendor \
     vendor.display.config@2.0 \
@@ -624,9 +625,12 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor:64 \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
+    libsqlite.vendor:64 \
     libvndfwk_detect_jni.qti.vendor
 
 # Radio
@@ -663,8 +667,9 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@2.0-service.multihal
-
+    android.hardware.sensors@2.0-service.multihal \
+    libdumpstateutil.vendor:64
+    
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
@@ -734,4 +739,5 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
+    libpng.vendor:32 \
     libwfdaac_vendor
