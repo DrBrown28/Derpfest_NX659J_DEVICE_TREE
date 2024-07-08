@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/derp_nx659j.mk
-
-COMMON_LUNCH_CHOICES := \
-    derp_nx659j-eng \
-    derp_nx659j-user \
-    derp_nx659j-userdebug
