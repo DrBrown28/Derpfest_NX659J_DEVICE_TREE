@@ -481,8 +481,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpng.vendor:32 \
     libwfdaac_vendor
-    
-# Shim
-PRODUCT_PACKAGES += \
-    libpiex_shim \
-    libwatermark_shim    
