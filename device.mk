@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
     libexthwplugin \
     libhdmiedid \
     libhfp \
+    libaudioroute.vendor \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -117,7 +118,8 @@ PRODUCT_PACKAGES += \
     libsdmutils \
     memtrack.kona \
     libtinyxml \
-    libutilscallstack.vendor \
+    libutilscallstack.vendor:64 \
+    libnetutils.vendor:64 \
     libvulkan \
     vendor.display.config@1.9.vendor \
     vendor.display.config@2.0 \
@@ -207,6 +209,8 @@ PRODUCT_PACKAGES += \
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
+    libstagefright_omx.vendor \
+    libstagefright_softomx_plugin.vendor \
     libavservices_minijail.vendor
 
 PRODUCT_COPY_FILES += \
@@ -363,6 +367,7 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libsqlite.vendor:64 \
+    libprocessgroup.vendor \
     libvndfwk_detect_jni.qti.vendor
 
 # Radio
